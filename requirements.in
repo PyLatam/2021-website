@@ -17,6 +17,7 @@ beautifulsoup4==4.9.1
 click==7.0
 chardet==3.0.4
 django-appconf==1.0.4
+django-treebeard==4.3
 django-simple-captcha==0.5.10
 django-classy-tags==1.0.0
 django-sekizai==1.1.0
