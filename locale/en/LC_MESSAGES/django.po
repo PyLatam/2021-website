@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-30 01:53+0000\n"
+"POT-Creation-Date: 2021-03-15 10:51-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,7 @@ msgstr ""
 msgid "T-Shirt"
 msgstr ""
 
-#: templates/account/dashboard.html:17 templates/base.html:88
+#: templates/account/dashboard.html:17
 msgid "Dashboard"
 msgstr ""
 
@@ -429,7 +429,7 @@ msgstr ""
 msgid "Log in to an existing account"
 msgstr ""
 
-#: templates/account/login.html:25 templates/base.html:91
+#: templates/account/login.html:25
 msgid "Login"
 msgstr ""
 
@@ -541,7 +541,6 @@ msgid "Password"
 msgstr ""
 
 #: templates/account/signup.html:4 templates/account/signup.html:6
-#: templates/base.html:92
 msgid "Sign Up"
 msgstr ""
 
@@ -576,53 +575,49 @@ msgid ""
 "officially closed."
 msgstr ""
 
-#: templates/base.html:89
-msgid "Logout"
-msgstr ""
-
-#: templates/base.html:152
+#: templates/base.html:153
 msgid ""
 "commits unyieldingly to the rights of all individuals to mutual respect and "
 "acceptance of others, without biases based on differences of any kind."
 msgstr ""
 
-#: templates/base.html:157
+#: templates/base.html:158
 msgid "Subscribe to our newsletter"
 msgstr ""
 
-#: templates/base.html:160
+#: templates/base.html:161
 msgid "The latest news, articles, and resources, sent to your inbox weekly."
 msgstr ""
 
-#: templates/base.html:167
+#: templates/base.html:168
 msgid "email address"
 msgstr ""
 
-#: templates/base.html:167
+#: templates/base.html:168
 msgid "EMAIL"
 msgstr ""
 
-#: templates/base.html:172
+#: templates/base.html:173
 msgid "SUBSCRIBE"
 msgstr ""
 
-#: templates/base.html:207
+#: templates/base.html:208
 msgid "All rights reserved."
 msgstr ""
 
-#: templates/base.html:212
+#: templates/base.html:213
 msgid "Built with"
 msgstr ""
 
-#: templates/base.html:212
+#: templates/base.html:213
 msgid "powered by"
 msgstr ""
 
-#: templates/base.html:213
+#: templates/base.html:214
 msgid "Web development by"
 msgstr ""
 
-#: templates/base.html:214
+#: templates/base.html:215
 msgid "Homepage UI design"
 msgstr ""
 
@@ -666,6 +661,10 @@ msgstr ""
 msgid "AUGUST"
 msgstr ""
 
+#: templates/home.html:46
+msgid "Online Conference"
+msgstr ""
+
 #: templates/home.html:49
 msgid ""
 "PyCon Latam is a version of the PyCon conference that aims to bring together "
@@ -673,33 +672,49 @@ msgid ""
 "for them to interact with the python community at large."
 msgstr ""
 
-#: templates/home.html:69
-msgid "PyCon Latam 2020 suspended"
-msgstr ""
-
 #: templates/home.html:72
-msgid ""
-"Since the COVID-19 health emergency began, the organizing committee has "
-"monitored the world situation, especially in Latin America, to determine if "
-"it was necessary to adjust our plans."
+msgid "The conference you don't want to miss"
 msgstr ""
 
-#: templates/home.html:73
+#: templates/home.html:79
 msgid ""
-"Unfortunately, most of the countries involved in PyCon Latam face a great "
-"challenge, so we have decided to prioritize the health of our community and "
-"have suspended the conference this 2020. We thank you for your understanding "
-"and support with this difficult decision."
+"After the success of the first edition of this conference, we are back! On "
+"this occasion with a virtual event, under the same mission, to bring "
+"together the communities of all the countries of Latin America."
 msgstr ""
 
-#: templates/home.html:74
-msgid ""
-"We continue to work and for the moment we have reached an agreement with the "
-"headquarters to ensure August 2021 as the new date for the conference."
+#: templates/home.html:95
+msgid "2 Days"
 msgstr ""
 
-#: templates/home.html:75
-msgid "We hope to see you in 2021!"
+#: templates/home.html:109
+msgid "2 Tracks (Spanish and English)"
+msgstr ""
+
+#: templates/home.html:123
+msgid "4 Keynotes"
+msgstr ""
+
+#: templates/home.html:137
+msgid "Challenges"
+msgstr ""
+
+#: templates/home.html:160
+msgid "Would you like to be our sponsor?"
+msgstr ""
+
+#: templates/home.html:163
+msgid ""
+"The companies and organizations who sponsor PyCon Latam make the conference "
+"possible, and get to connect with a wide array of Python programmers."
+msgstr ""
+
+#: templates/home.html:168
+msgid "More Details"
+msgstr ""
+
+#: templates/home.html:173
+msgid "Contact Us"
 msgstr ""
 
 #: templates/schedule/detail.html:19 templates/schedule/detail.html:47
