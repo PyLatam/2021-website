@@ -250,6 +250,63 @@
     };
 </script>
 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+<script type="text/javascript">
+  $(document).on('ready', function () {
+      $('.speakers-carousel').on('init', function() {
+          $(".slick-current").removeClass("opacity-25");
+          $('.slick-current').addClass("opacity-95");
+          $(".slick-current > .card").removeClass("m-3");
+          $('.slick-current > .card').addClass("m-1");
+          $('.slick-current > .card').addClass("p-4");
+      });
+      $(".speakers-carousel").slick({
+        focusOnSelect: true,
+        dots: true,
+        centerMode: true,
+        centerPadding: '60px',
+        speed: 300,
+        slidesToShow: 3,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+      });
+      $('.speakers-carousel').on('beforeChange', function() {
+          $(".slick-current").removeClass("opacity-95");
+          $('.slick-current').addClass("opacity-25");
+          $(".slick-current > .card").addClass("m-1");
+          $('.slick-current > .card').removeClass("p-4");
+          $('.slick-current > .card').removeClass("m-3");
+      });
+      $('.speakers-carousel').on('afterChange', function() {
+          $(".slick-current").removeClass("opacity-25");
+          $('.slick-current').addClass("opacity-95");
+          $(".slick-current > .card").removeClass("m-3");
+          $('.slick-current > .card').addClass("m-1");
+          $('.slick-current > .card').addClass("p-4");
+      });
+  });
+</script>
 {% block js %}{% endblock js %}
 </body>
 </html>
