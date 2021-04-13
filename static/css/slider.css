@@ -1,0 +1,46 @@
+.slide-arrow{
+  position: absolute;
+  top: 35%;
+}
+
+.prev-arrow{
+  left: -3%;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  box-shadow: -3px 3px 0 rgba(0,0,0,.5);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.next-arrow{
+  right: -3%;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  box-shadow: -3px 3px 0 rgba(0,0,0,.5);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.prev-arrow{
+  outline: none;
+  transform: rotate(45deg);
+}
+.next-arrow{
+  outline: none;
+  transform: rotate(-135deg);
+}
+.prev-arrow:hover, .next-arrow:hover{
+  outline: none;
+  box-shadow: -3px 3px 0 rgb(189, 189, 189);
+}
+
+.prev-arrow:focus, .next-arrow:focus{
+  outline: 0;
+}
