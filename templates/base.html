@@ -20,7 +20,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'build/tailwind.css' %}">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}"/>
-    {% block css %}{% endblock css %}
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}"/>
+    {% endblock css %}
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 
     {% if not debug and not request.user.is_staff %}
@@ -136,7 +138,7 @@
   <div x-data="{ open: false }" class="relative pt-6 pb-8 md:pb-12 lg:pb-16 xl:pb-24">
     {% show_menu 0 2 2 2 'includes/menu/navigation.html' %}
     {% block content %}{% endblock content %}
-    <svg class="absolute bottom-0 left-0" width="640" height="200" fill="none">
+    <svg class="absolute bottom-0 left-0 hidden lg:inline" width="640" height="200" fill="none">
       <image href="/static/img/Serpiente3.svg" y="20"></image> 
     </svg>
   </div>
@@ -253,8 +255,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
 <script type="text/javascript">
+  // carousel logic
   $(document).on('ready', function () {
       $('.speakers-carousel').on('init', function() {
           $(".slick-current").removeClass("opacity-25");
@@ -270,6 +274,9 @@
         centerPadding: '60px',
         speed: 300,
         slidesToShow: 3,
+        arrows: true,
+        prevArrow:'<button class="slide-arrow prev-arrow"></button>',
+        nextArrow:'<button class="slide-arrow next-arrow"></button>',
         responsive: [
         {
           breakpoint: 768,
