@@ -40,7 +40,7 @@ class Form(forms.BaseForm):
     languages = forms.CharField(
         'Languages',
         required=True,
-        initial='["en", "de"]',
+        initial='["en", "de"]'
     )
     use_manifeststaticfilesstorage = forms.CheckboxField(
         'Hash static file names',
@@ -242,7 +242,7 @@ class Form(forms.BaseForm):
                 if d.strip()
             ]
             domains = {
-                env("SITE_ID", 1): {
+                1: {
                     'name': env('SITE_NAME', ''),
                     'domain': domain,
                     'aliases': domain_aliases,
