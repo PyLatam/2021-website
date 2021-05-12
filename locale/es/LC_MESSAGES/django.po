@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-15 10:51-0600\n"
+"POT-Creation-Date: 2021-05-12 13:27-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -626,7 +626,7 @@ msgstr ""
 "Gracias por su interés. Las inscripciones para PyCon Latam de este año están "
 "oficialmente cerradas."
 
-#: templates/base.html:153
+#: templates/base.html:155
 msgid ""
 "commits unyieldingly to the rights of all individuals to mutual respect and "
 "acceptance of others, without biases based on differences of any kind."
@@ -634,44 +634,44 @@ msgstr ""
 "se compromete a respetar los derechos de todos los individuos, a partir de "
 "la tolerancia mutua y la aceptación de los demás sin distinción alguna."
 
-#: templates/base.html:158
+#: templates/base.html:160
 msgid "Subscribe to our newsletter"
 msgstr "Suscríbete a nuestro boletín"
 
-#: templates/base.html:161
+#: templates/base.html:163
 msgid "The latest news, articles, and resources, sent to your inbox weekly."
 msgstr ""
 "Ùltimas noticias, artículos y recursos, semanalmente a su bandeja de entrada."
 
-#: templates/base.html:168
+#: templates/base.html:170
 msgid "email address"
 msgstr "dirección de correo electrónico"
 
-#: templates/base.html:168
+#: templates/base.html:170
 msgid "EMAIL"
 msgstr "CORREO ELECTRÓNICO"
 
-#: templates/base.html:173
+#: templates/base.html:175
 msgid "SUBSCRIBE"
 msgstr "SUSCRIBIRSE"
 
-#: templates/base.html:208
+#: templates/base.html:210
 msgid "All rights reserved."
 msgstr "Todos los derechos reservados."
 
-#: templates/base.html:213
+#: templates/base.html:215
 msgid "Built with"
 msgstr "Desarrollado con"
 
-#: templates/base.html:213
+#: templates/base.html:215
 msgid "powered by"
 msgstr "Impulsado por"
 
-#: templates/base.html:214
+#: templates/base.html:216
 msgid "Web development by"
 msgstr "Desarrollo de web por"
 
-#: templates/base.html:215
+#: templates/base.html:217
 msgid "Homepage UI design"
 msgstr "Diseño UI de pagina principal por"
 
@@ -711,15 +711,15 @@ msgstr[1] "Por favor corrige los errores."
 msgid "Import"
 msgstr "Importar"
 
-#: templates/home.html:41
+#: templates/home.html:43
 msgid "AUGUST"
 msgstr "AGOSTO"
 
-#: templates/home.html:46
+#: templates/home.html:48
 msgid "Online Conference"
 msgstr "Conferencia en línea"
 
-#: templates/home.html:49
+#: templates/home.html:51
 msgid ""
 "PyCon Latam is a version of the PyCon conference that aims to bring together "
 "python developers from all Latin American countries, and serve as a platform "
@@ -730,43 +730,83 @@ msgstr ""
 "y servir como una plataforma para que interactúen con la comunidad de python "
 "en general."
 
-#: templates/home.html:72
+#: templates/home.html:74
 msgid "The conference you don't want to miss"
 msgstr "La conferencia que no te quieres perder"
 
-#: templates/home.html:79
+#: templates/home.html:81
 msgid ""
 "After the success of the first edition of this conference, we are back! On "
 "this occasion with a virtual event, under the same mission, to bring "
 "together the communities of all the countries of Latin America."
 msgstr ""
-"Después del éxito de la primera edición de esta conferencia, ¡estamos de regreso! "
-"En esta ocasión con un evento virtual, bajo la misma misión, reunir a las "
-"comunidades de todos los países de Latinoamérica."
+"Después del éxito de la primera edición de esta conferencia, ¡estamos de "
+"regreso! En esta ocasión con un evento virtual, bajo la misma misión, reunir "
+"a las comunidades de todos los países de Latinoamérica."
 
-#: templates/home.html:95
+#: templates/home.html:97
 msgid "2 Days"
 msgstr "2 días de pláticas"
 
-#: templates/home.html:109
+#: templates/home.html:111
 msgid "2 Tracks (Spanish and English)"
 msgstr "2 Tracks de pláticas (Español e Inglés)"
 
-#: templates/home.html:123
+#: templates/home.html:125
 #, fuzzy
 #| msgid "Keynote Speakers"
 msgid "4 Keynotes"
 msgstr "4 Ponentes Principales"
 
-#: templates/home.html:137
+#: templates/home.html:139
 msgid "Challenges"
 msgstr "Retos"
 
-#: templates/home.html:160
+#: templates/home.html:222
+msgid "Pylatam Online Tickets"
+msgstr "Pylatam boletos en linea"
+
+#: templates/home.html:234
+msgid "Pylatam 2021 online for the first time!"
+msgstr "¡Pylatam 2021 en linea por primera vez!"
+
+#: templates/home.html:239
+msgid "What is included?"
+msgstr "¿Que está incluido?"
+
+#: templates/home.html:251
+msgid ""
+"A unique environment for cross-collaboration between developers, sysadmins "
+"and others."
+msgstr ""
+"Un entorno único para la colaboración cruzada entre desarrolladores, "
+"administradores de sistemasy otros."
+
+#: templates/home.html:262
+msgid "Virtual rooms with activites and awards."
+msgstr "Salas virtuales con actividades y premios."
+
+#: templates/home.html:272
+msgid "Coding Challenges."
+msgstr "Retos de programacion"
+
+#: templates/home.html:282
+msgid "Access to the entire immersive event experience"
+msgstr "Acceso a toda la experiencia inmersiva del evento."
+
+#: templates/home.html:291
+msgid "May"
+msgstr "Mayo"
+
+#: templates/home.html:308
+msgid "Buy Tickets"
+msgstr "Comprar Boletos"
+
+#: templates/home.html:328
 msgid "Would you like to be our sponsor?"
 msgstr "¿Te gustaría ser nuestro patrocinador?"
 
-#: templates/home.html:163
+#: templates/home.html:331
 msgid ""
 "The companies and organizations who sponsor PyCon Latam make the conference "
 "possible, and get to connect with a wide array of Python programmers."
@@ -774,11 +814,11 @@ msgstr ""
 "Las empresas y organizaciones que patrocinan PyCon Latam hacen posible la "
 "conferencia y se conectan con una amplia gama de programadores de Python."
 
-#: templates/home.html:168
+#: templates/home.html:336
 msgid "More Details"
 msgstr "Mas Detalles"
 
-#: templates/home.html:173
+#: templates/home.html:341
 msgid "Contact Us"
 msgstr "Contáctanos"
 
