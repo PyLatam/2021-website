@@ -24,6 +24,9 @@ ROOM_CHOICES = (
     ('coral', 'Coral'),
     ('room_en', 'Nautilus'),
     ('room_es', 'Concha Nacar'),
+    ('principal', 'Principal'),
+    ('import', 'Import'),
+    ('from', 'From'),
     # Lunch & breakfast rooms
     ('lunch', 'El Palmar & Villa Linda'),
     ('breakfast', 'El Palmar & Villa Linda'),
