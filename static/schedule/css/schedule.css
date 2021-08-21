@@ -9,12 +9,12 @@
   padding:5px;
   padding-top: 10px;
   position: relative;
-  grid-template-columns: [talk_col_start] 20px [talk_col_author] 1fr [talk_col_space] auto [talk_col_photo] 65px [talk_col_end];
-  grid-template-rows: [talk_row_top] 10px [talk_row_author] 1fr [talk_row_photo] 1fr [talk_row_end];
+  grid-template-columns: [talk_col_photo] 65px [talk_col_start] 20px [talk_col_author] 1fr [talk_col_space] auto [talk_col_end];
+  grid-template-rows: [talk_row_photo] 1fr [talk_row_top] 10px [talk_row_author] 1fr [talk_row_end];
   grid-template-areas:
-    "level title . photo"
-    ". title . photo"
-    ". author . photo"
+    "photo level title ."
+    "photo . title ."
+    "photo . author ."
 }
 
 .talk__card:hover{
@@ -239,7 +239,8 @@
 /* TIME BLOCK */
 
 .single__day__block {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  background-color: #C3D7E6;
 }
 
 .schedule__date{
@@ -265,6 +266,7 @@ h2.time__block_date{
   font-weight: 100;
   font-size: 3vw;
   margin: 0;
+  text-align: center;
 }
 
 h2.time__block_date > b{
@@ -282,7 +284,6 @@ h2.time__block_date > b{
   padding: 5px 20px 13px;
   /* background: white; */
   margin: 0 20px;
-
   background: rgb(255,255,255);
   /* background: linear-gradient(180deg, rgba(160,201,205,1) 0%, rgba(160,201,205,0) 50%), rgb(255,255,255); */
 }
@@ -301,12 +302,12 @@ h2.time__block_date > b{
   }
 
 .time__block.keynote {
-    background: #d68027;
+    background: #C19738;
     color: white;
 }
 
 .lunch{
-  background: #1E7982 !important;
+  background: #4590C0 !important;
   padding: 20px;
   color: #ccc;
 }
@@ -384,7 +385,7 @@ h2.time__block_date > b{
   .time__block{
     grid-template-columns: [time_col_start] 120px [time_col_slot1] 1fr [time_col_slot2]  1fr [time_col_end];
     background: white;
-    margin: 2px 20px;
+    margin: 0px 0px;
     padding: 10px 15px;
     grid-column-gap: 3vw;
   }
@@ -502,10 +503,12 @@ background: linear-gradient(180deg, rgba(202,246,247,.5) 0%, rgba(255,255,255,1)
   }
 
   .schedule-filter__container{
-    position:fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     right:20px;
     top:1.25vw;
-    background:#ACCAD9;
+    background:transparent;
     transition:0.3s all;
     overflow:hidden;
     width:65px;
@@ -515,6 +518,12 @@ background: linear-gradient(180deg, rgba(202,246,247,.5) 0%, rgba(255,255,255,1)
     border:1px solid black;
     border-radius:5px;
     z-index:99;
+  }
+
+  .schedule-filter__container-area{
+    background-color: #ACCAD9;
+    padding: 20px;
+    border-radius:5px;
   }
 
   .schedule-filter__container h3{
@@ -539,8 +548,6 @@ background: linear-gradient(180deg, rgba(202,246,247,.5) 0%, rgba(255,255,255,1)
     transition:0.3s all;
   }
 
-
-
   /* SHOW TOGGLE EFFECTS */
   .schedule-filter__container--show{
     width:97vw;
@@ -561,7 +568,7 @@ background: linear-gradient(180deg, rgba(202,246,247,.5) 0%, rgba(255,255,255,1)
     top: 0;
     left: 0;
     right: 0;
-    margin:25px;
+    margin:5px;
     max-width:100vw;
   }
 
@@ -586,6 +593,7 @@ background: linear-gradient(180deg, rgba(202,246,247,.5) 0%, rgba(255,255,255,1)
     animation: wait-first 0.5s;
     animation-fill-mode: forwards;
     animation-delay:0.3s;
+    
   }
 
   /* FILTER BOX STYLES */
@@ -603,7 +611,7 @@ background: linear-gradient(180deg, rgba(202,246,247,.5) 0%, rgba(255,255,255,1)
     margin-bottom:4px;
     text-align:center;
     list-style:none;
-    background:#1E7982;
+    background:#4590C0;
     padding:4px 8px;
     border-radius:8px;
     display:inline-block;
