@@ -79,7 +79,7 @@
         <div class="single__day__block" data-date='{{ datetime|date:"Y-m-d" }}'>
             <div class="schedule__date">
                 {% if LANGUAGE_CODE == 'es' %}
-                    <h2 class="time__block_date"><b>{{ datetime|date:"l d, M" }}</b></h2>
+                    <h2 class="time__block_date"><b>{{ datetime|date:"l d, F" }}</b></h2>
                 {% else %}
                     <h2 class="time__block_date"><b>{{ datetime|date:"l, M d" }}</b></h2>
                 {% endif %}
