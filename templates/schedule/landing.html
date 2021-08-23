@@ -89,7 +89,7 @@
                     {% if entries %}
                         <div class="time__block {% if not entries.0.audience_level %}lunch{% elif entries.0.is_keynote %}keynote{% endif %}"> <!-- Date Block -->
                             <div class="talk__time">
-                                <h3>{{ slot.start_time }}</h3>
+                                <div class="time__block-timezone"><h3>{{ slot.start_time }}</h3><h5>CDT</h5></div>
                                 <p> {% trans "until" %} {{ slot.end_time }}<p>
                             </div>
                             {% for entry in entries %}
@@ -97,9 +97,9 @@
                                     <!--<a >-->
                                     <a href='{{ entry.slug }}' class="talk__card{% if entry.is_keynote %} keynote{% endif %}" data-location='{{ entry.room }}'
                                             {% if entry.audience_level %} data-experience='{{ entry.audience_level }}'{% endif %}>
-                                            <div>
-                                                <img src="{{ entry.speaker.picture.url }}" class="circle_clip">
-                                            </div>
+                                        <div>
+                                            <img src="{{ entry.speaker.picture.url }}" class="circle_clip">
+                                        </div>
                                         <span class="level__{{ entry.audience_level }}">&#9679</span>
                                         <h4>{{ entry.title }}</h4>
                                         <p>by {{ entry.speaker }} @ <b class="talk__card_blue">{{ entry.get_room_display }}</b></p>
