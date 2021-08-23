@@ -306,6 +306,14 @@ h2.time__block_date > b{
     color: white;
 }
 
+.time__block-timezone {
+  display:flex;
+  justify-content: space-around;
+}
+.time__block-timezone > h5 {
+  font-size: small;
+}
+
 .lunch{
   background: #4590C0 !important;
   padding: 20px;
