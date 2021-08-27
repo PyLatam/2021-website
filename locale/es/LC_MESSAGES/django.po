@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-12 13:27-0500\n"
+"POT-Creation-Date: 2021-08-27 09:40-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -730,11 +730,15 @@ msgstr ""
 "y servir como una plataforma para que interactúen con la comunidad de python "
 "en general."
 
-#: templates/home.html:74
+#: templates/home.html:73
+msgid "Go to live conference"
+msgstr "Ir a la conferencia en vivo"
+
+#: templates/home.html:88
 msgid "The conference you don't want to miss"
 msgstr "La conferencia que no te quieres perder"
 
-#: templates/home.html:81
+#: templates/home.html:95
 msgid ""
 "After the success of the first edition of this conference, we are back! On "
 "this occasion with a virtual event, under the same mission, to bring "
@@ -744,37 +748,37 @@ msgstr ""
 "regreso! En esta ocasión con un evento virtual, bajo la misma misión, reunir "
 "a las comunidades de todos los países de Latinoamérica."
 
-#: templates/home.html:97
+#: templates/home.html:111
 msgid "2 Days"
 msgstr "2 días de pláticas"
 
-#: templates/home.html:111
+#: templates/home.html:125
 msgid "2 Tracks (Spanish and English)"
 msgstr "2 Tracks de pláticas (Español e Inglés)"
 
-#: templates/home.html:125
+#: templates/home.html:139
 #, fuzzy
 #| msgid "Keynote Speakers"
 msgid "4 Keynotes"
 msgstr "4 Ponentes Principales"
 
-#: templates/home.html:139
+#: templates/home.html:153
 msgid "Challenges"
 msgstr "Retos"
 
-#: templates/home.html:222
+#: templates/home.html:236
 msgid "Pylatam Online Tickets"
 msgstr "Pylatam boletos en linea"
 
-#: templates/home.html:234
+#: templates/home.html:248
 msgid "Pylatam 2021 online for the first time!"
 msgstr "¡Pylatam 2021 en linea por primera vez!"
 
-#: templates/home.html:239
+#: templates/home.html:253
 msgid "What is included?"
 msgstr "¿Que está incluido?"
 
-#: templates/home.html:251
+#: templates/home.html:265
 msgid ""
 "A unique environment for cross-collaboration between developers, sysadmins "
 "and others."
@@ -782,31 +786,27 @@ msgstr ""
 "Un entorno único para la colaboración cruzada entre desarrolladores, "
 "administradores de sistemasy otros."
 
-#: templates/home.html:262
+#: templates/home.html:276
 msgid "Virtual rooms with activites and awards."
 msgstr "Salas virtuales con actividades y premios."
 
-#: templates/home.html:272
+#: templates/home.html:286
 msgid "Coding Challenges."
 msgstr "Retos de programacion"
 
-#: templates/home.html:282
+#: templates/home.html:296
 msgid "Access to the entire immersive event experience"
 msgstr "Acceso a toda la experiencia inmersiva del evento."
 
-#: templates/home.html:291
-msgid "May"
-msgstr "Mayo"
-
-#: templates/home.html:308
+#: templates/home.html:340
 msgid "Buy Tickets"
 msgstr "Comprar Boletos"
 
-#: templates/home.html:328
+#: templates/home.html:360
 msgid "Would you like to be our sponsor?"
 msgstr "¿Te gustaría ser nuestro patrocinador?"
 
-#: templates/home.html:331
+#: templates/home.html:363
 msgid ""
 "The companies and organizations who sponsor PyCon Latam make the conference "
 "possible, and get to connect with a wide array of Python programmers."
@@ -814,11 +814,11 @@ msgstr ""
 "Las empresas y organizaciones que patrocinan PyCon Latam hacen posible la "
 "conferencia y se conectan con una amplia gama de programadores de Python."
 
-#: templates/home.html:336
+#: templates/home.html:368
 msgid "More Details"
 msgstr "Mas Detalles"
 
-#: templates/home.html:341
+#: templates/home.html:373
 msgid "Contact Us"
 msgstr "Contáctanos"
 
@@ -861,34 +861,36 @@ msgstr "Abstracto"
 msgid "Description"
 msgstr "Descripción"
 
-#: templates/schedule/landing.html:14
+#: templates/schedule/landing.html:15
 msgid "Filter Schedule by"
 msgstr "Filtrar Programación"
 
-#: templates/schedule/landing.html:55
-msgid "Location"
-msgstr "Sala"
-
-#: templates/schedule/landing.html:66 templates/schedule/landing.html:79
-msgid "Show All"
-msgstr ""
-
-#: templates/schedule/landing.html:70
+#: templates/schedule/landing.html:56
 msgid "Date"
 msgstr "Fecha"
 
-#: templates/schedule/landing.html:84
+#: templates/schedule/landing.html:65
+msgid "Show All"
+msgstr "Mostrar Todos"
+
+#: templates/schedule/landing.html:71
 msgid "Filters"
 msgstr "Filtros"
 
-#: templates/schedule/landing.html:106
+#: templates/schedule/landing.html:93
 msgid "until"
 msgstr "hasta"
 
-#: templates/schedule/landing.html:124
+#: templates/schedule/landing.html:111
 #, python-format
 msgid "Enjoy at <b class=\"talk__card_blue\">%(room)s</b>"
 msgstr "En <b class=\"talk__card_blue\">%(room)s</b>"
+
+#~ msgid "May"
+#~ msgstr "Mayo"
+
+#~ msgid "Location"
+#~ msgstr "Sala"
 
 #~ msgid "Logout"
 #~ msgstr "Cerra Sesión"
